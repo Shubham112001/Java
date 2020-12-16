@@ -60,7 +60,7 @@ public class MobilePhone {
 		}
 		return null;
 	}
-	public Contacts querContact(String name) {
+	public Contacts queryContact(String name) {
 		int position=findContact(name);
 		if(position>=0) {
 			return this.myContact.get(position);
