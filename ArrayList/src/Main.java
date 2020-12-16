@@ -55,7 +55,7 @@ public class Main {
 	private static void updateContact() {
 		System.out.println("Enter Existing Contact name");
 		String name=s.nextLine();
-		Contacts existingContactRecord=mobilePhone.querContact(name);
+		Contacts existingContactRecord=mobilePhone.queryContact(name);
 		if(existingContactRecord==null) {
 			System.out.println("Contact not found");
 			return;
@@ -75,7 +75,7 @@ public class Main {
 	private static void removeContact() {
 		System.out.println("Enter Existing Contact name");
 		String name=s.nextLine();
-		Contacts existingContactRecord=mobilePhone.querContact(name);
+		Contacts existingContactRecord=mobilePhone.queryContact(name);
 		if(existingContactRecord==null) {
 			System.out.println("Contact not found");
 			return;
@@ -89,7 +89,7 @@ public class Main {
 	private static void queryContact() {
 		System.out.println("Enter Existing Contact name");
 		String name=s.nextLine();
-		Contacts existingContactRecord=mobilePhone.querContact(name);
+		Contacts existingContactRecord=mobilePhone.queryContact(name);
 		if(existingContactRecord==null) {
 			System.out.println("Contact not found");
 			return;
